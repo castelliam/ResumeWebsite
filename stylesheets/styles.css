@@ -1,0 +1,50 @@
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+header {
+	position: fixed;
+	text-align: center;
+	font-size: 50px;
+	padding-top: 35px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background-color: royalblue;
+	border-bottom: 1px solid black;
+	box-shadow: 2px 2px 4px black;
+	z-index: 10000; /* just added (not in class) - keep the header above everything */
+}
+
+.pics .pic {
+	display: inline-block;
+	margin-top: 150px;
+	margin-right: 25px;
+}
+
+.pics .pic:first-child{
+	margin-left: 130px;
+}
+
+.pics .pic img{
+	height: 270px;
+	width: 200px;
+}
+
+.pics .pic:last-child {
+	margin-right: 0;
+}
+
+.about_me {
+	float: left;
+	width: 660px;
+	height: 300px;
+	overflow-y: auto; 
+	margin-left: 130px;
+}
+
+#aboutMe_Section {
+	overflow: auto;
+}
