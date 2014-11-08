@@ -18,9 +18,48 @@ header {
 	z-index: 10000; /* just added (not in class) - keep the header above everything */
 }
 
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background-color: royalblue;
+	border-top: 1px solid black;
+	box-shadow: 2px -2px 4px black;
+}
+
+footer .contacts_div .contact {
+	margin-top: 20px;
+	color: #fff;
+	padding-left: 90px;
+}
+
+footer .contacts_div .contact a {
+	color: white;
+	text-decoration: none;
+}
+
+#content {
+	padding-top: 150px;
+}
+
+#content .work_message {
+	font-size: 50px;
+	text-align: center;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+section::after {
+	clear: both;
+}
+
 .pics .pic {
 	display: inline-block;
-	margin-top: 150px;
+	margin-top: 20px;
 	margin-right: 25px;
 }
 
@@ -43,8 +82,18 @@ header {
 	height: 300px;
 	overflow-y: auto; 
 	margin-left: 130px;
+	margin-bottom: 300px;
 }
 
 #aboutMe_Section {
 	overflow: auto;
+}
+
+.contacts_div .contact{
+	display: inline-block;
+}
+
+.contacts_div .contact img{
+	height: 30px;
+	width: 30px;
 }
