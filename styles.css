@@ -5,17 +5,85 @@
 
 header {
 	position: fixed;
-	text-align: center;
-	font-size: 50px;
-	padding-top: 35px;
+	/*padding-top: 8px;*/
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100px;
-	background-color: royalblue;
+	height: 122px;
+	color: #203C47;
+	background-color: #8CD2ED;
 	border-bottom: 1px solid black;
 	box-shadow: 2px 2px 4px black;
 	z-index: 10000; /* just added (not in class) - keep the header above everything */
+}
+
+#name {
+	font-size: 45px;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+
+.title {
+	margin-left: 125px;
+	margin-top: 20px;
+	float: left;
+	font-family: 'Georgia';
+}
+
+header p .job_title{
+	font-size: 12px;
+}
+
+header nav {
+	float: left;
+}
+
+header nav ul {
+	margin-top: 0px;
+	padding: 0;
+	list-style-type: none;
+}
+
+header nav #main-nav > li {
+	display: inline-block;
+	position: relative;
+}
+
+header nav ul li a {
+	display: block;
+	margin-left: 20px;	
+	padding: 50px 55px 50px 50px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Georgia';
+	-webkit-transition: background-color 0.3s ease-in-out;
+	-moz-transition: background-color 0.3s ease-in-out;
+	-ms-transition: background-color 0.3s ease-in-out;
+	-o-transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+	background-color: #4B91AD;
+}
+
+header nav ul.main-nav {
+	width: 100%;
+	margin-top: -999px;
+	background-color: #7E7A7A;
+	opacity: 0;
+	z-index: 9999;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-ms-transition: opacity 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+}
+
+body {
+	background-color: #D5E6ED;
 }
 
 footer {
@@ -24,20 +92,21 @@ footer {
 	left: 0;
 	width: 100%;
 	height: 100px;
-	background-color: royalblue;
+	background-color: #8CD2ED;
 	border-top: 1px solid black;
 	box-shadow: 2px -2px 4px black;
 }
 
 footer .contacts_div .contact {
+	font-family: 'Georgia';
 	margin-top: 20px;
 	color: #fff;
 	padding-left: 90px;
 }
 
 footer .contacts_div .contact a {
-	color: white;
 	text-decoration: none;
+	color: #2B6FCF;
 }
 
 #content {
@@ -45,6 +114,7 @@ footer .contacts_div .contact a {
 }
 
 #content .work_message {
+	font-family: 'Georgia';
 	font-size: 50px;
 	text-align: center;
 }
@@ -70,6 +140,7 @@ section::after {
 .pics .pic img{
 	height: 270px;
 	width: 200px;
+	border-radius: 80px;
 }
 
 .pics .pic:last-child {
@@ -83,14 +154,21 @@ section::after {
 	overflow-y: auto; 
 	margin-left: 130px;
 	margin-bottom: 300px;
+	font-family: 'Georgia';
 }
 
 #aboutMe_Section {
 	overflow: auto;
 }
 
+.contacts_div .contact {
+	margin-left: 30px;
+}
+
 .contacts_div .contact{
 	display: inline-block;
+	padding-top: 12px;
+	margin-right: 10px;
 }
 
 .contacts_div .contact img{
